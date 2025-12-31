@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name:divAnimation;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+        }
+            @keyframes divAnimation{
+                0%{
+                    translate: 0 0 ;
+                    background-color:red;
+                    /* width: 0; */
+                    rotate:0;
+                    
+                }
+                25%{
+                    translate: 0 500px ;
+                    background-color:blue;
+                    /* width: 100%; */
+                       rotate:90deg;
+                }
+                50%{
+                    translate: 500px 500px;
+                     rotate:180deg;
+                    
+                    }
+                75%{
+                      translate: 500px 0;
+                         rotate:270deg;
+                }
+                100%{
+                      translate: 0 0;
+                }
+            }
+
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+
+</body>
+</html>
